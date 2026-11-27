@@ -1,0 +1,29 @@
+name: opdracht2
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  code-ophalen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code ophalen
+        uses: actions/checkout@v4
+  node-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Node setup
+        uses: actions/setup-node@v4
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Node setup
+        uses: actions/setup-node@v4
+
+      - name: Dependencies installeren
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
