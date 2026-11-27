@@ -22,8 +22,5 @@ jobs:
       - name: Node setup
         uses: actions/setup-node@v4
 
-      - name: Dependencies installeren
-        run: npm ci
-
       - name: Run tests
         run: npm test
