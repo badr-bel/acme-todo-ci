@@ -4,7 +4,7 @@ const { createStore } = require("../src/todos");
 
 test("een nieuwe todo heeft status TODO", () => {
   const store = createStore();
-  // const todo = store.add({ title: 'les voorbereiden' });
+  const todo = store.add({ title: 'les voorbereiden' });
   assert.strictEqual(todo.status, "TODO");
   assert.strictEqual(store.list().length, 1);
 });
