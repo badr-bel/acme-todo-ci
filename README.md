@@ -20,4 +20,4 @@ Jij zet een pipeline op die elke wijziging automatisch test en een image publice
 | `HOST` | `127.0.0.1` | Adres waarop de server luistert. |
 | `PORT` | `3000` | Poort waarop de server luistert. |
 
-Endpoints: `GET /api/todos` en `POST /api/todos` (JSON-body met `title`).
+Endpoints: `GET /api/todos` en `POST /api/todos` (JSON-body met `title`).   
